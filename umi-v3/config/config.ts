@@ -1,4 +1,5 @@
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
+import routes from './routes';
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -6,8 +7,7 @@ export default defineConfig({
   },
   // 开启 ant-design-pro 布局
   // layout: {},
-  routes: [
-    { path: '/', component: '@/pages/index' },
-  ],
+  routes: routes,
   fastRefresh: {},
-});
+})
+
